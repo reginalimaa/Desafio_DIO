@@ -1,5 +1,5 @@
 # Desafio de Projeto sobre Git/GitHub da Dio
-Primeira etapa: criar repositório com 
+Primeira etapa: criar repositório
 
 
 
