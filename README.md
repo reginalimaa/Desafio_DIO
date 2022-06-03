@@ -1,7 +1,7 @@
 # Primeiro Desafio de Projeto sobre Git/GitHub da Dio - Repositório 
-Primeira etapa
+Primeira etapa: criar repositório 
 
 
 
-##Links Úteis 
+## Links Úteis 
 [Sintaxe Básica Markdown](https://www.markdownguide.org/getting-started/)
