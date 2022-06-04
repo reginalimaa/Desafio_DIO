@@ -1,0 +1,124 @@
+## Olá, seja bem vindo(a) as minha anotações!
+
+ **Links úteis: **
+
+- Download para Git: [Git - Downloads (git-scm.com)](https://git-scm.com/downloads)
+  1. ![image-20220603210321409](C:\Users\regina\AppData\Roaming\Typora\typora-user-images\image-20220603210321409.png)
+
+- SHA1(Secure Hash Algoritmo - Algoritmo de Hash Seguro)1: algoritmo de encriptação, pega o arquivo e embaralha de uma forma muito específica.
+
+  ```
+   **A encriptação** gera um conjunto de caracteres identificador de 40 dígitos, esses conjuntos são     únicos e servem de identificação
+  ```
+
+openssl sha1 texto.txt
+
+- Objetos do Git
+
+**BLOBS(arquivo):** tipo, tamanho,  \0 e o conteúdo do arquivo
+
+**TREE(pasta):** armazena e aponte blobs,  e guarda o nome do arquivo
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8bdb5f9c-1ac8-4f70-9b05-748e8151ccc8/Untitled.png)
+
+**COMMIT:** aponta para o autor e mensagem. possui sha1 e hash
+
+é distribuído pq vc tem um repositório
+
+- Chave SSH: é uma forma de estabelecer uma conexão segura e encriptada entre duas máquinas
+
+- Token de acesso pessoal: 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
+
+- Primeiros comando do GIT
+
+- iniciar o GIT
+
+  ```
+     - git init: além de criar uma uma pastinha .git, cria um repositório dentro do diretório.
+  
+     - git add
+  
+     - git commint
+  ```
+
+- tracked - arquivos rastreados;
+
+- **ciclo**
+
+**unmodified:** ainda não foi modificado, o git compara o sha1 e muda para o modfied.
+
+**modified:** sofreu modificaçãoe parte para p staged
+
+**staged:** conceito chave, onde fica os arquivos onde estão se preparando para fazer parte de um agrupamento;
+
+do staged vai para o commit que retorna para o modified para aguardar novas modificações
+
+untracked: o git não tem ciência da existência
+
+sempre volta para modified quando comita, e se vc abre e modifica volta novamente para modified e se adicionar a uma comite vai para stage e volta para o commit(passa a integrar ao repositorio integral que pode ser empurrado para o remoto)
+
+- repositório
+
+repositório local só vai ser composto por commit, ou n é possível enviar para um repositório remoto(GitHub)
+
+servidor
+
+ambiente de desenvolvimento
+
+**markdown** é uma forma mais humana de escrever html sem que seja necessário saber como html funciona quantidade de "h" - h1
+
+# 
+
+# COMANDOS
+
+resumo: no ambiente de desenvolvimento, pegou o diretorio de trabalho, deu um git add, rodou esse comando git add que moveu todo os arquivos, seja ele untracked ou modified para staged que vão compor de fato a área de staged. e quando usamos o git commit, passando a mensagem, movemos toda essa área de stagem para nosso repositório local
+
+**dir:** listar os diretórios contido na pasta situada 
+
+**cd /** : navegar por um lugar específico no sistema. 
+
+**cd windows:** entrar dentro da pasta windows
+
+ **\windows>dir:** trás todos os aquivos e programas contido na pasta windows 
+
+**cd..:** voltar ao repositório (\windows>cd..) 
+
+**Ctrl l:** limpar tela
+
+**echo:** printar mensagem
+
+> : redirecionador de fluxo, joga o itput em um aquivo **echo hello > hello.txt**
+
+(deleta arquivo, não o repositório)
+
+**del: delete C:\>del workspace(pasta)**
+
+**rmdir:** deletar repositório
+
+**mkdir:** criar nova pasta
+
+fleg **ls -a:** mostra arquivos ocultos
+
+**git status**: information
+
+**git add *** pega tudo que foi modificado e adiciona para o staged para ser commitado
+
+**git add** - movendo arquivo para a área que entra em ação (anterior ao palco) 
+
+**git commit**, envelopa em uma pasta
+
+depois da alteração e dá o comando **git status**, para incluir usamos o seguinte (**git add ***) para incluir tudo. - **add primeiro pra depois gerar o commit** -
+
+**modified > staged** **git push -** enviar código para o github
+
+**git pull -** puxar o conteúdo
+
+**-m "mensagem"** enviar mensagem
+
+**git add .** passar informações para a máquina local 
+
+**git push origin main**, enviar todos os commits local para a nuvem(GitHub)
+
+
+
+- Download GitHub para desktop: https://github.com/reginalimaa/Desafio_DIO.git
